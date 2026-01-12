@@ -1,0 +1,114 @@
+/*
+ * Stilvorlage für Naenaes Wohlfühl‑Plan
+ *
+ * Dieser Stil nutzt sanfte Rosatöne, weiche Schatten und
+ * verspielte Schriftarten (wo verfügbar), um einen
+ * warmen und persönlichen Eindruck zu vermitteln. Die Herzen
+ * vor den Aufzählungen setzen liebevolle Akzente.
+ */
+
+/*
+ * Import Google Fonts for a modern, feminine look.  Pacifico provides a playful
+ * handwritten style for headings while Poppins offers a clean, readable body
+ * font. If external fonts cannot be loaded (e.g. offline viewing), system
+ * fallbacks will take over gracefully.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  /* Use Poppins as the primary body font with sensible fallbacks. */
+  font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  /* Soft two‑tone gradient to create depth without being overwhelming. */
+  background: linear-gradient(to bottom right, #ffeaf2, #ffe0ec);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  /* A slightly lighter pink for the header creates a friendly, airy feel. */
+  background: #f9b8d3;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  /* Use our handwritten Pacifico font for the site title. */
+  font-family: 'Pacifico', 'Brush Script MT', 'Comic Sans MS', cursive;
+  font-size: 2.2em;
+  /* Round the bottom corners for a card‑like appearance. */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ffffff;
+  /* Slightly deeper pink for contrast against the lighter header. */
+  background: #d76a9e;
+  padding: 8px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background: #c55c8c;
+  /* Subtle lift on hover for an interactive feel. */
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  /* Use Pacifico for headings to match the site title. */
+  font-family: 'Pacifico', 'Brush Script MT', 'Comic Sans MS', cursive;
+  color: #d76a9e;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+ul li::before {
+  content: '❤';
+  color: #d76a9e;
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+section {
+  margin-bottom: 30px;
+  background: #fff6fa;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #777;
+}
